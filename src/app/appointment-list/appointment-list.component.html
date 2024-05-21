@@ -6,7 +6,7 @@
 <div>
     <ul>
         <li *ngFor="let appointment of appointments; index as i">
-            {{appointment.title}}
+            {{i+1}} {{appointment.title}} {{appointment.date}}
             <button (click)="deleteAppointment(i)">Delete</button>
         </li>
     </ul>
